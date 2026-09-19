@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FLORERIA PE | Flores que hablan por ti</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+background:#fff8f7;
+color:#552d35;
+font-family:Arial,sans-serif
+}
+
+a{
+text-decoration:none;
+color:inherit
+}
+
+/* NAVBAR */
+.nav{
+height:74px;
+background:#fff0f2;
+border-bottom:1px solid #efd5d9;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 6%;
+position:sticky;
+top:0;
+z-index:50
+}
+
+.logo{
+font-family:Georgia,serif;
+font-size:29px;
+letter-spacing:3px;
+color:#6b3139
+}
+
+.logo span{
+display:block;
+font:10px Arial;
+letter-spacing:2px;
+color:#a35d68;
+margin-top:3px
+}
+
+.menu{
+display:flex;
+gap:28px;
+font-size:13px
+}
+
+.menu a:hover{
+color:#c65d78
+}
+
+.icons{
+font-size:21px;
+display:flex;
+gap:17px
+}
+
+/* IMAGEN PRINCIPAL */
+.design{
+width:100%;
+display:block;
+background:#f9dddd
+}
+
+.design img{
+width:100%;
+display:block;
+height:auto
+}
+
+/* RESEÑAS */
+.review-section{
+background:linear-gradient(#fff0f2,#ffe3e5);
+padding:65px 6%;
+border-top:1px solid #efd0d5
+}
+
+.heading{
+text-align:center;
+margin-bottom:28px
+}
+
+.heading .small{
+font-size:11px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#c46c80
+}
+
+.heading h2{
+font:normal 43px Georgia,serif;
+margin:8px 0;
+color:#6a3039
+}
+
+.heading p{
+color:#8a666d
+}
+
+.box{
+max-width:1100px;
+margin:auto;
+background:rgba(255,255,255,.9);
+border:1px solid #efd5d9;
+border-radius:24px;
+padding:25px;
+box-shadow:0 12px 35px #8d52621c
+}
+
+.form{
+display:grid;
+grid-template-columns:1fr 180px;
+gap:12px
+}
+
+.form textarea{
+grid-column:1/-1;
+min-height:110px
+}
+
+.field{
+border:1px solid #e7c8ce;
+border-radius:12px;
+padding:13px;
+font:14px Arial;
+outline:none;
+background:white
+}
+
+.field:focus{
+border-color:#c96c83;
+box-shadow:0 0 0 3px #c96c8317
+}
+
+.button{
+border:0;
+border-radius:999px;
+background:#cf7188;
+color:white;
+font-weight:bold;
+padding:13px 22px;
+cursor:pointer
+}
+
+.reviews{
+margin-top:25px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px
+}
+
+.review{
+background:white;
+border:1px solid #efd9dc;
+border-radius:18px;
+padding:17px;
+min-height:140px
+}
+
+.stars{
+color:#e49b38;
+letter-spacing:2px;
+margin:7px 0
+}
+
+.review small{
+color:#a68b91
+}
+
+.delete{
+float:right;
+border:0;
+background:none;
+color:#b85d71;
+font-size:11px;
+cursor:pointer
+}
+
+/* FOOTER */
+.footer{
+background:#f7d9dd;
+color:#713b45;
+padding:30px 6%;
+display:flex;
+justify-content:space-between;
+gap:20px;
+font-size:12px
+}
+
+.footer strong{
+font:22px Georgia,serif
+}
+
+.mobile-note{
+display:none
+}
+
+/* CELULAR */
+@media(max-width:800px){
+
+.menu{
+display:none
+}
+
+.nav{
+padding:0 5%
+}
+
+.logo{
+font-size:23px
+}
+
+.reviews{
+grid-template-columns:1fr
+}
+
+.form{
+grid-template-columns:1fr
+}
+
+.form textarea{
+grid-column:auto
+}
+
+.mobile-note{
+display:block;
+text-align:center;
+padding:12px;
+background:#fff1f3;
+font-size:11px;
+color:#95636c
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENÚ -->
+<nav class="nav">
+
+<a class="logo" href="#">
+FLORERIA PE
+<span>FLORES QUE HABLAN POR TI ♥</span>
+</a>
+
+<div class="menu">
+<a href="#inicio">Inicio</a>
+<a href="#flores">Flores</a>
+<a href="#peluches">Peluches</a>
+<a href="#arreglos">Arreglos</a>
+<a href="#resenas">Contacto</a>
+</div>
+
+<div class="icons">
+⌕　♙　🛍
+</div>
+
+</nav>
+
+
+<!-- AVISO EN CELULAR -->
+<div class="mobile-note">
+🌻 LUNES 21 DE SEPTIEMBRE 2026 · DÍA DE LAS FLORES AMARILLAS
+</div>
+
+
+<!-- DISEÑO PRINCIPAL -->
+<section id="inicio" class="design">
+
+<img
+src="assets/diseno-floreria-pe.png"
+alt="Floreria PE - Flores Amarillas - Promo S/ 39.90"
+>
+
+</section>
+
+
+<!-- RESEÑAS -->
+<section id="resenas" class="review-section">
+
+<div class="heading">
+
+<div class="small">
+Lo que dicen de nosotros
+</div>
+
+<h2>
+Reseñas de nuestros clientes ♡
+</h2>
+
+<p>
+Comparte tu experiencia con Floreria PE.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<form class="form" id="reviewForm">
+
+<input
+class="field"
+id="name"
+placeholder="Tu nombre"
+maxlength="60"
+required
+>
+
+<select class="field" id="stars">
+
+<option value="5">★★★★★</option>
+<option value="4">★★★★☆</option>
+<option value="3">★★★☆☆</option>
+<option value="2">★★☆☆☆</option>
+<option value="1">★☆☆☆☆</option>
+
+</select>
+
+
+<textarea
+class="field"
+id="comment"
+placeholder="Escribe tu reseña..."
+maxlength="500"
+required
+></textarea>
+
+
+<button
+class="button"
+type="submit"
+>
+✎ Deja tu reseña
+</button>
+
+</form>
+
+
+<div class="reviews" id="reviews"></div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div>
+
+<strong>
+FLORERIA PE
+</strong>
+
+<br>
+
+Flores que hablan por ti ♥
+
+</div>
+
+
+<div>
+
+Flores　·　
+Peluches　·　
+Arreglos　·　
+Detalles especiales
+
+</div>
+
+</footer>
+
+
+<!-- SISTEMA DE RESEÑAS -->
+<script>
+
+const KEY="floreriaPEReviews";
+
+const initial=[
+
+{
+name:"Valeria M.",
+stars:5,
+comment:"Las flores llegaron en perfecto estado, son hermosas. 100% recomendado 💛"
+},
+
+{
+name:"Diego R.",
+stars:5,
+comment:"El ramo de girasoles es espectacular, mi novia quedó encantada. Gracias 💛"
+},
+
+{
+name:"Camila S.",
+stars:5,
+comment:"Excelente servicio, muy puntuales y la calidad de las flores es increíble."
+}
+
+];
+
+
+function load(){
+
+try{
+
+let x=JSON.parse(
+localStorage.getItem(KEY)
+);
+
+return Array.isArray(x)
+?x
+:initial;
+
+}catch(e){
+
+return initial;
+
+}
+
+}
+
+
+function safe(s){
+
+return String(s).replace(
+/[&<>"']/g,
+
+c=>({
+
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+
+}[c])
+
+);
+
+}
+
+
+function render(){
+
+const box=
+document.getElementById("reviews");
+
+box.innerHTML="";
+
+
+load()
+.slice()
+.reverse()
+.forEach((r,idx)=>{
+
+const el=
+document.createElement("article");
+
+el.className="review";
+
+
+el.innerHTML=
+
+'<button class="delete" onclick="delReview('+idx+')">Eliminar</button>' +
+
+'<strong>'+safe(r.name)+'</strong>' +
+
+'<div class="stars">' +
+
+("★".repeat(r.stars)) +
+
+("☆".repeat(5-r.stars)) +
+
+'</div>' +
+
+'<div>'+safe(r.comment)+'</div>' +
+
+'<br>' +
+
+'<small>Reseña de cliente</small>';
+
+
+box.appendChild(el);
+
+});
+
+}
+
+
+function delReview(idx){
+
+let x=load();
+
+x.splice(
+x.length-1-idx,
+1
+);
+
+localStorage.setItem(
+KEY,
+JSON.stringify(x)
+);
+
+render();
+
+}
+
+
+document
+.getElementById("reviewForm")
+.addEventListener("submit",e=>{
+
+e.preventDefault();
+
+let x=load();
+
+x.push({
+
+name:
+document
+.getElementById("name")
+.value
+.trim(),
+
+stars:
++document
+.getElementById("stars")
+.value,
+
+comment:
+document
+.getElementById("comment")
+.value
+.trim()
+
+});
+
+
+localStorage.setItem(
+KEY,
+JSON.stringify(x)
+);
+
+e.target.reset();
+
+render();
+
+});
+
+
+render();
+
+</script>
+
+</body>
+</html>
